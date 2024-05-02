@@ -1,0 +1,101 @@
+:root {
+}
+
+.menu {
+  margin: 16px;
+  display: flex;
+  height: 72px;
+  background-color: #f5f5f5;
+  border-radius: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  color: black;
+  justify-content: space-between;
+  .menu-align-arrow {
+    margin-right: 7px;
+  }
+  .menu-logo {
+    width: 79px;
+    height: 38px;
+    margin-right: 7px;
+    margin-left: 31px;
+  }
+  .menu-logo-2 {
+    width: 40px;
+    height: 40px;
+  }
+  .arrow {
+    fill: #7c7c7c;
+  }
+  .menu-1 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 33px;
+
+    .menu-1-text {
+      font-family: "Noto Sans KR", sans-serif;
+      margin-right: 33px;
+    }
+  }
+  .menu-2 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 33px;
+    .ico-person {
+      width: 22px;
+      height: 22px;
+      margin-right: 16px;
+    }
+    .btn-playNow {
+      border-radius: 10px;
+      padding: 16px 24px;
+      color: white;
+      font-size: 17px;
+      background-color: #ff8a1f;
+      margin-right: 31px;
+    }
+  }
+  .menu-hover {
+    font-family: "Noto Sans KR", sans-serif;
+    margin-right: 33px;
+    &:hover {
+      background-color: #7c7c7c;
+      border-radius: 10px;
+      padding: 10px;
+      > div {
+        height: 150px;
+        transition: 0.3s ease-out;
+        background-color: #ff8a1f;
+        padding: 20px;
+        position: absolute;
+      }
+    }
+  }
+  .list1 {
+    overflow: hidden;
+    height: 0px;
+    font-size: 21px;
+    margin-top: 25px;
+
+    position: absolute;
+
+    .list1-1 {
+      margin: 10px;
+    }
+  }
+  .log-in-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .ico-login {
+    width: 20px;
+    height: 20px;
+  }
+  .ico-bitcoin {
+    width: 30px;
+  }
+  .list-shop {
+  }
+}
