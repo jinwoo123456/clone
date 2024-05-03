@@ -152,6 +152,7 @@ header {
 }
 
 .main-2 {
+  width: 100%;
   position: relative;
   .main-2-pastel {
     width: 100%;
@@ -183,6 +184,7 @@ header {
   }
 }
 .main-3 {
+  width: 100%;
   position: relative;
   .main-3-img {
     width: 1920px;
