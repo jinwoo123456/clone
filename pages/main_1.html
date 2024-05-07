@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/main_1.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main_1.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="../js/main_1.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,234 +34,315 @@
     <header>
       <nav class="menu-bar">
         <ul class="menu">
-          <div class="menu-1">
-            <li>
-              <a href=""
-                ><img src="../img/ico-logo.png" alt="" class="menu-logo" /></a
-              ><a href=""
-                ><img src="../img/ico-caret-down-fill.svg" alt="" class="arrow"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="../img/ico-overwatch-logo.png"
-                  alt=""
-                  class="menu-logo-2"
-              /></a>
-            </li>
-            <li class="menu-hover">
-              <a href="" class="menu-align-arrow">게임정보</a
-              ><a href=""
-                ><img src="../img/ico-caret-down-fill.svg" alt="" class="arrow"
-              /></a>
-              <div class="list1">
-                <ul>
-                  <li class="list1-1">개요</li>
-                  <li class="list1-1">자료실</li>
-                  <li class="list1-1">패치노트</li>
-                </ul>
-              </div>
-            </li>
-            <li class="menu-1-text"><a href="">영웅</a></li>
-            <li class="menu-1-text"><a href="">시즌</a></li>
-            <li class="menu-1-text"><a href="">새 소식</a></li>
-            <li class="menu-hover">
-              <a href="" class="menu-align-arrow">커뮤니티</a
-              ><a href=""
-                ><img src="../img/ico-caret-down-fill.svg" alt="" class="arrow"
-              /></a>
-              <div class="list1">
-                <ul>
-                  <li class="list1-1">커뮤니티</li>
-                  <li class="list1-1">플레이어 프로필</li>
-                  <li class="list1-1">오버워치 이스포츠</li>
-                </ul>
-              </div>
-            </li>
-            <li class="menu-hover">
-              <a href="" class="menu-align-arrow"
-                >샵<img
-                  src="../img/ico-caret-down-fill.svg"
-                  alt=""
-                  class="arrow"
-              /></a>
-              <div class="list1">
-                <ul>
-                  <li class="list1-1">
-                    <button class="list-shop">
-                      <img
-                        src="../img/ico-bitcoin.png"
-                        alt=""
-                        class="ico-bitcoin"
-                      />게임 내 콘텐츠
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </div>
-          <div class="menu-2">
-            <li><img src="../img/ico-search.svg" alt="" /></li>
-            <li class="menu-hover">
-              <img src="../img/ico-person.svg" alt="" class="ico-person" /><a
-                href=""
-                class="menu-align-arrow"
-                >계정</a
-              ><a href=""
-                ><img src="../img/ico-caret-down-fill.svg" alt="" class="arrow"
-              /></a>
-              <div class="list1">
-                <ul>
-                  <li>
-                    <button class="log-in-btn">
-                      <img
-                        src="../img/ico-login.png"
-                        alt=""
-                        class="ico-login"
-                      />
-                      로그인
-                    </button>
-                  </li>
-                  <li class="list1-1">자료실</li>
-                  <li class="list1-1">패치노트</li>
-                </ul>
-              </div>
-            </li>
-            <li><button class="btn-playNow">지금 플레이하기</button></li>
-          </div>
+          <li class="menu-space-btw">
+            <ul class="menu-1">
+              <li class="menu-title">
+                <div class="menu-title-h1">
+                  <a href=""
+                    ><img
+                      src="../img/ico-logo.png"
+                      alt=""
+                      class="menu-logo" /></a
+                  ><a href=""
+                    ><img
+                      src="../img/ico-caret-down-fill.svg"
+                      alt=""
+                      class="arrow"
+                  /></a>
+                </div>
+              </li>
+              <li class="menu-title-2">
+                <a href=""
+                  ><img
+                    src="../img/ico-overwatch-logo.png"
+                    alt=""
+                    class="menu-logo-2"
+                /></a>
+              </li>
+              <li class="menu-hover">
+                <a href="" class="menu-align-arrow">게임정보</a
+                ><a href=""
+                  ><img
+                    src="../img/ico-caret-down-fill.svg"
+                    alt=""
+                    class="arrow"
+                /></a>
+                <div class="list1">
+                  <ul>
+                    <li class="list1-1">개요</li>
+                    <li class="list1-1">자료실</li>
+                    <li class="list1-1">패치노트</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-1-text"><a href="">영웅</a></li>
+              <li class="menu-1-text"><a href="">시즌</a></li>
+              <li class="menu-1-text"><a href="">새 소식</a></li>
+              <li class="menu-hover">
+                <a href="" class="menu-align-arrow">커뮤니티</a
+                ><a href=""
+                  ><img
+                    src="../img/ico-caret-down-fill.svg"
+                    alt=""
+                    class="arrow"
+                /></a>
+                <div class="list1">
+                  <ul>
+                    <li class="list1-1">커뮤니티</li>
+                    <li class="list1-1">플레이어 프로필</li>
+                    <li class="list1-1">오버워치 이스포츠</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-hover">
+                <a href="" class="menu-align-arrow"
+                  >샵<img
+                    src="../img/ico-caret-down-fill.svg"
+                    alt=""
+                    class="arrow"
+                /></a>
+                <div class="list1">
+                  <ul>
+                    <li class="list1-1">
+                      <button class="list-shop">
+                        <img
+                          src="../img/ico-bitcoin.png"
+                          alt=""
+                          class="ico-bitcoin"
+                        />게임 내 콘텐츠
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="menu-2">
+              <li><img src="../img/ico-search.svg" alt="" /></li>
+              <li class="menu-hover">
+                <img src="../img/ico-person.svg" alt="" class="ico-person" /><a
+                  href=""
+                  class="menu-align-arrow"
+                  >계정</a
+                ><a href=""
+                  ><img
+                    src="../img/ico-caret-down-fill.svg"
+                    alt=""
+                    class="arrow"
+                /></a>
+                <div class="list1">
+                  <ul>
+                    <li>
+                      <button class="log-in-btn">
+                        <img
+                          src="../img/ico-login.png"
+                          alt=""
+                          class="ico-login"
+                        />
+                        로그인
+                      </button>
+                    </li>
+                    <li class="list1-1">자료실</li>
+                    <li class="list1-1">패치노트</li>
+                  </ul>
+                </div>
+              </li>
+              <li><button class="btn-playNow">지금 플레이하기</button></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <ul class="main">
-      <li>
-        <div class="main-1">
-          <img
-            src="../img/ico-overwatch-logo-text.png"
-            alt=""
-            class="main-text-logo"
-          />
-          <div class="video-text">쟁취할 가치가 있는 미래</div>
-          <p class="video-text-2">팀 기반 액션&#183;무료 플레이</p>
+    <div class="main">
+      <div class="main-1">
+        <img
+          src="../img/ico-overwatch-logo-text.png"
+          alt=""
+          class="main-text-logo"
+        />
+        <div class="video-text">쟁취할 가치가 있는 미래</div>
+        <p class="video-text-2">팀 기반 액션&#183;무료 플레이</p>
 
-          <video
-            src="../video/overwatchtrailer.mp4"
-            autoplay="autoplay"
-            loop="loop"
-            width="100%"
-          ></video>
-          <button class="main-btn">지금 플레이</button>
-        </div>
-      </li>
+        <iframe
+          width="100%"
+          height="1080px"
+          src="https://www.youtube.com/embed/smrtkTxRGj4?si=3jmhVxboT7kiQJXq?controls=0&autoplay=1&loop=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <button class="main-btn">지금 플레이</button>
+      </div>
 
-      <li>
-        <div class="main-2">
-          <img src="../img/pastel.png" alt="" class="main-2-pastel" />
-          <div class="main-video-text-align">
-            <video
-              src="../video/SnapSave.io-오버워치 챔피언스 시리즈를 소개합니다! _ OWCS 아시아 지역 안내-(1080p60).mp4"
-              class="main-2-video"
-              controls="controls"
-              autoplay="autoplay"
-            ></video>
-            <div class="main-2-text">
-              <h2 class="main-2-text-bold">2024 오버워치 이스포츠</h2>
-              <p class="main-2-text-2">
-                새로운 오버워치 이스포츠 프로그램과 오버워치 챔피언 시리즈를<br />
-                소개합니다.업데이트 영상을 시청하고,블로그 게시물을 통해
-                2024년에<br />
-                오버워치 이스포츠가 어떻게 진행될지 자세히 알아보세요
-              </p>
-            </div>
+      <div class="main-2">
+        <img src="../img/pastel.png" alt="" class="main-2-pastel" />
+        <div class="main-video-text-align">
+          <iframe
+            src="https://www.youtube.com/embed/4kQQ6xFpgHg?si=ZijKEw0g-JSrKeCg?controls=0&autoplay=1&loop=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="main-2-video"
+          ></iframe>
+
+          <div class="main-2-text">
+            <h2
+              class="main-2-text-bold"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="100"
+            >
+              2024 오버워치 이스포츠
+            </h2>
+            <p
+              class="main-2-text-2"
+              data-aos="fade-right"
+              data-aos-offset="100"
+            >
+              새로운 오버워치 이스포츠 프로그램과 오버워치 챔피언 시리즈를<br />
+              소개합니다.업데이트 영상을 시청하고,블로그 게시물을 통해
+              2024년에<br />
+              오버워치 이스포츠가 어떻게 진행될지 자세히 알아보세요
+            </p>
           </div>
         </div>
-      </li>
+      </div>
 
-      <li>
-        <div class="main-3">
-          <img src="../img/img-66load.jpg" alt="" class="main-3-img" />
-          <div class="menu-3-align">
-            <div class="main-3-video-aline">
-              <video
-                src="../video/vdo-venther.mp4"
-                autoplay="autoplay"
-                class="main-3-video"
-                controls="controls"
-              ></video>
-            </div>
-            <div class="main-3-text">
-              <h2 class="main-3-text-bold">벤처와 함께 앞으로</h2>
-              <p class="main-3-text-2">
-                모두가 잠금 해제할 수 있는 신규 공격 영웅,벤처를
-                만나보세요.열정적인<br />
-                고고학자에서 영웅으로 변신한 벤처는 지하를 넘나드는 능력으로
-                게임의<br />
-                판도를 바꾸고 엄청난 피해를 선사합니다.땅을
-                파고,숨어들고,뚫어내고,<br />
-                막강한 지진 피해를 입혀 상대편의 생명력과 희망을 무너뜨리고
-                제압해<br />
-                승리를 캐내세요.
-              </p>
-              <button>자세히 보기</button>
-            </div>
+      <div class="main-3">
+        <img src="../img/img-66load.jpg" alt="" class="main-3-img" />
+
+        <div class="menu-3-align">
+          <div class="main-3-video-aline">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/X2iA4VBO-WM?si=HR156SbaQSr6xiU-?controls=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              class="main-3-video"
+              autoplay="1"
+            ></iframe>
+          </div>
+          <div class="main-3-text">
+            <h2
+              class="main-3-text-bold"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-delay="100"
+            >
+              벤처와 함께 앞으로
+            </h2>
+            <p
+              class="main-3-text-2"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-delay="200"
+            >
+              모두가 잠금 해제할 수 있는 신규 공격 영웅,벤처를
+              만나보세요.열정적인<br />
+              고고학자에서 영웅으로 변신한 벤처는 지하를 넘나드는 능력으로
+              게임의<br />
+              판도를 바꾸고 엄청난 피해를 선사합니다.땅을
+              파고,숨어들고,뚫어내고,<br />
+              막강한 지진 피해를 입혀 상대편의 생명력과 희망을 무너뜨리고
+              제압해<br />
+              승리를 캐내세요.
+            </p>
+            <button
+              data-aos="fade-left"
+              data-aos-offset="100"
+              data-aos-delay="300"
+            >
+              자세히 보기
+            </button>
           </div>
         </div>
-      </li>
-      <li class="main-4">
-        <img src="../img/img-pastel2.png" alt="" class="main4-pastel" />
-        <div class="main4-title">새 소식</div>
-        <ul class="main4-grid">
-          <li>
-            <img src="../img/img-main4-grid.jpg" alt="" class="main4-content" />
-            <div class="textbox">
-              침공되는 세계에 막아주세요! - <br />
-              <div class="textbox-2">
-                오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+      </div>
+
+      <div class="main-4">
+        <img src="../img/pastel2.png" alt="" class="main4-pastel" />\
+        <div class="main-4-position">
+          <div
+            class="main4-title"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            data-aos-offset="150"
+          >
+            새 소식
+          </div>
+          <ul class="main4-grid">
+            <li
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-offset="250"
+            >
+              <img
+                src="../img/img-main4-grid.jpg"
+                alt=""
+                class="main4-content"
+              />
+              <div class="textbox">
+                침공되는 세계에 막아주세요! - <br />
+                <div class="textbox-2">
+                  오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <img
-              src="../img/img-main4-grid-2.jpg"
-              alt=""
-              class="main4-content"
-            />
-            <div class="textbox">
-              침공되는 세계에 막아주세요! - <br />
-              <div class="textbox-2">
-                오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-offset="250"
+            >
+              <img
+                src="../img/img-main4-grid-2.jpg"
+                alt=""
+                class="main4-content"
+              />
+              <div class="textbox">
+                침공되는 세계에 막아주세요! - <br />
+                <div class="textbox-2">
+                  오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <img
-              src="../img/img-main4-grid-3.jpg"
-              alt=""
-              class="main4-content"
-            />
-            <div class="textbox">
-              침공되는 세계에 막아주세요! - <br />
-              <div class="textbox-2">
-                오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+            </li>
+            <li data-aos="fade-left" data-aos-delay="100" data-aos-offset="250">
+              <img
+                src="../img/img-main4-grid-3.jpg"
+                alt=""
+                class="main4-content"
+              />
+              <div class="textbox">
+                침공되는 세계에 막아주세요! - <br />
+                <div class="textbox-2">
+                  오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <img
-              src="../img/img-main4-grid-4.jpg"
-              alt=""
-              class="main4-content"
-            />
-            <div class="textbox">
-              침공되는 세계에 막아주세요! - <br />
-              <div class="textbox-2">
-                오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+            </li>
+            <li data-aos="fade-left" data-aos-delay="200" data-aos-offset="250">
+              <img
+                src="../img/img-main4-grid-4.jpg"
+                alt=""
+                class="main4-content"
+              />
+              <div class="textbox">
+                침공되는 세계에 막아주세요! - <br />
+                <div class="textbox-2">
+                  오늘 침공되는 세계 PVE 이벤트가 시작됩니다.
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
