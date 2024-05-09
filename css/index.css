@@ -5,6 +5,9 @@
 html {
   font-size: 62.5%;
 }
+body {
+  overflow-x: hidden;
+}
 
 .noto-serif-kr-regular {
   font-family: "Noto Serif KR", serif;
@@ -13,11 +16,15 @@ html {
 }
 header {
   position: fixed;
-  z-index: 1001;
+  z-index: 10;
   width: 100%;
+}
+.menu-align {
+  display: flex;
 }
 
 .menu {
+  padding: 1rem;
   margin: 1.6rem;
 
   height: 7.2rem;
@@ -92,30 +99,17 @@ header {
       margin-right: 3.1rem;
     }
   }
+
   .menu-hover {
     font-family: "Noto Sans KR", sans-serif;
     margin-right: 3.3rem;
-    &:hover {
-      background-color: #7c7c7c;
-      border-radius: 1rem;
-      padding: 1rem;
-      > div {
-        height: 15rem;
-        transition: 0.3s ease-out;
-        background-color: #ff8a1f;
-        padding: 2rem;
-        position: absolute;
-      }
-    }
   }
   .list1 {
-    overflow: hidden;
-    height: 0rem;
+    height: 15rem;
     font-size: 2.1rem;
-    margin-top: 2.5rem;
 
     position: absolute;
-
+    background-color: #ff8a1f;
     .list1-1 {
       margin: 1rem;
     }
@@ -139,6 +133,12 @@ header {
   align-items: center;
   font-style: italic;
   font-weight: 600;
+}
+.hidden-video {
+  position: absolute;
+  width: 100%;
+  height: 108rem;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .video-text {
