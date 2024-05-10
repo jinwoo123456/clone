@@ -10,7 +10,30 @@ body {
   overflow-x: hidden;
   justify-content: center;
 }
-
+header {
+  .menu-1-text {
+    &:hover {
+      color: #ff8a1f;
+    }
+  }
+  .menu-align-arrow {
+    &:hover {
+      color: #ff8a1f;
+      filter: invert(65%) sepia(92%) saturate(2431%) hue-rotate(344deg)
+        brightness(101%) contrast(101%);
+      .arrow {
+        filter: invert(65%) sepia(92%) saturate(2431%) hue-rotate(344deg)
+          brightness(101%) contrast(101%);
+      }
+    }
+  }
+  .ico-search {
+    &:hover {
+      filter: invert(65%) sepia(92%) saturate(2431%) hue-rotate(344deg)
+        brightness(101%) contrast(101%);
+    }
+  }
+}
 .noto-serif-kr-regular {
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
@@ -18,7 +41,7 @@ body {
 }
 /* 헤더 영역 */
 .title-container {
-  width: 23rem;
+  width: 13%;
   height: 7.2rem;
   align-content: center;
 }
@@ -28,6 +51,8 @@ body {
 }
 
 .menu-align {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -58,8 +83,8 @@ body {
     contrast(88%);
 }
 .arrow2 {
-  filter: invert(16%) sepia(89%) saturate(6054%) hue-rotate(358deg)
-    brightness(97%) contrast(113%);
+  filter: invert(97%) sepia(0%) saturate(799%) hue-rotate(245deg)
+    brightness(118%) contrast(100%);
 }
 
 .menu-logo {
@@ -67,21 +92,31 @@ body {
   height: 5.2rem;
   gap: 0.7rem;
 }
+.h1-align:has(img) {
+  &:hover {
+    color: #000066;
+    filter: brightness(0.7);
+  }
+}
 .menu-logo-2 {
   width: 4rem;
   height: 4rem;
   margin-left: 2rem;
 }
-
+nav {
+  .arrow {
+    margin-left: 0.7rem;
+  }
+}
 .menu {
-  z-index: 10001;
+  left: 50%;
+  margin-left: -48.5%;
+  z-index: 1001;
   position: absolute;
   width: 97%;
   align-items: center;
   position: fixed;
-
-  margin: 1.6rem;
-
+  margin-top: 1.6rem;
   height: 7.2rem;
   background-color: #f5f5f5;
   border-radius: 1.4rem;
@@ -161,11 +196,14 @@ body {
       display: block;
       font-size: 1.7rem;
       color: #f5f5f5;
+      &:hover {
+        color: #ff8a1f;
+      }
     }
   }
   .log-in-btn {
     border-radius: var(--button);
-    height: 3rem;
+    height: 3.3rem;
     border: 0.2rem solid #ff8a1f;
     font-size: 1rem;
     padding: 0.5rem;
@@ -261,8 +299,12 @@ body {
   }
 }
 .main-3 {
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 108rem;
+  background-image: url(/img/img-66load.jpg);
+  background-size: cover;
+
   .main-3-img {
     width: 100%;
 
@@ -304,11 +346,12 @@ body {
   }
 }
 .main-4 {
-  position: relative;
+  margin-bottom: 20rem;
+  background-image: url("./img/pastel2.png");
+
   justify-content: center;
   align-items: center;
   .main-4-position {
-    position: absolute;
     justify-content: center;
   }
   .main4-title {
@@ -321,11 +364,7 @@ body {
     margin-top: 10%;
     margin-bottom: 5%;
   }
-  .main4-pastel {
-    position: absolute;
 
-    width: 100%;
-  }
   .main4-grid {
     display: grid;
 
@@ -355,15 +394,15 @@ body {
 푸터 영역 */
 
 .footer-container {
-  margin-top: 90rem;
-  position: absolute;
-  width: 95.7%;
-  height: 94.2rem;
+  width: 100%;
+  height: 50.2rem;
   padding: 12rem 4rem;
   background: linear-gradient(90deg, #000066, #000099, #000066);
-  .footer-section-top {
+  .section {
     width: 75%;
     margin: 0 auto;
+  }
+  .footer-section-top {
     display: flex;
     justify-content: space-between;
   }
@@ -381,7 +420,68 @@ body {
     color: white;
     font-size: 1.8rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #000099, #000066);
-    background-image: rgb(255, 255, 255);
+    padding: 0 2rem;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background-color: white;
+      color: black;
+      .arrow2 {
+        filter: invert(0%) sepia(64%) saturate(4%) hue-rotate(289deg)
+          brightness(100%) contrast(100%);
+      }
+    }
   }
+  .footer-section-border {
+    margin-top: 2rem;
+    border: 0.1rem solid white;
+    opacity: 0.2;
+  }
+  .footer-section3 {
+    font-size: 1.4rem;
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+    color: white;
+    .footer-logo {
+      margin-top: -1.2rem;
+      margin-right: 3rem;
+      width: 15rem;
+      aspect-ratio: 1.25/1;
+    }
+    .footer-section3-ul {
+      display: flex;
+      margin-top: 2rem;
+    }
+  }
+  .footer-section3-2 {
+    opacity: 0.8;
+  }
+  .footer-section3-li {
+    margin-right: 2rem;
+  }
+
+  .footer-icon-fm {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+}
+
+.footer-section3-3 {
+  margin-left: auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-section4 {
+  margin-left: 0.4rem;
+  font-family: var(--noto-sans);
+  font-size: 1.4rem;
+  color: white;
+  opacity: 0.8;
 }
